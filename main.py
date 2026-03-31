@@ -88,7 +88,7 @@ def main():
 
     # создаем видеофайл для записи видео после обработки
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    out = cv2.VideoWriter("output.mp4", fourcc, fps, (int(width), int(height)))
+    out = cv2.VideoWriter("output123.mp4", fourcc, fps, (int(width), int(height)))
 
     # создаем переменную для подсчета количества подходов к столу и общего времени пустования стола
     average_time = list()
@@ -241,7 +241,7 @@ def main():
 
     # если нужно чтобы строки в таблице были разных цветов в зависимости от статуса
     styled = df.style.apply(color_row, axis=1)
-    styled.to_excel("output.xlsx", index=False)
+    styled.to_excel("output123.xlsx", index=False)
 
 if __name__ == '__main__':
     main()
